@@ -35,18 +35,14 @@
 			width: 100%
 			height: 81px
 			left: -100%
-			background: #000
-			filter: alpha(opacity=50)
-			+opacity(.5)
+			background: url(../img/main_bg.png) repeat
 		&:after
 			content: ""
 			position: absolute
 			width: 100%
 			height: 81px
 			right: -100%
-			background: #000
-			filter: alpha(opacity=50)
-			+opacity(.5)
+			background: url(../img/main_bg.png) repeat
 	.nav
 		position: absolute
 		width: 890px
@@ -114,12 +110,12 @@
 					display: block
 					width: 26px
 					height: 26px
-					border: 1px solid #fff
 					border-radius: 50%
 					margin: 20px auto 0
+					+s(menu_i)
 				&:hover
 					i
-						background: #99aabc
+						+s(menu_i-hover)
 	.main__in
 		@extend %in
 		padding-top: 81px
