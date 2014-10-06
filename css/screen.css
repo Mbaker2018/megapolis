@@ -30,7 +30,7 @@ body { font-family: Arial, sans-serif; line-height: 1.4; }
 
 .out { position: relative; min-width: 1200px; min-height: 100%; margin-bottom: -120px; background: url(../img/bg.jpg) no-repeat; background-attachment: fixed; z-index: 1; overflow: hidden; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 .out:before { content: ""; display: block; position: absolute; top: 0; bottom: 0; left: 0; right: 0; background-color: black; background: url(../img/dark_layer.png) repeat; }
-.out:after { content: ""; display: block; height: 120px; }
+.out:after { content: ""; display: block; height: 110px; }
 
 @font-face { font-family: Neuropol-Medium; src: url("fonts/Neuropol-Medium.eot"); src: url("fonts/Neuropol-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/Neuropol-Medium.woff") format("woff"), url("fonts/Neuropol-Medium.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
@@ -59,7 +59,7 @@ p { font-size: 15px; font-size: 1.5rem; font-family: "Helvetica-CE-Regular", Ari
 .l .l-col1 { float: left; width: 20%; }
 .l .l-col2 { float: right; width: 70%; }
 
-.header { position: relative; height: 80px; padding-top: 40px; margin-bottom: 120px; z-index: 2; font-family: "Neuropol-Medium", Arial, sans-serif; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; *zoom: 1; }
+.header { position: relative; height: 80px; padding-top: 40px; margin-bottom: 180px; z-index: 2; font-family: "Neuropol-Medium", Arial, sans-serif; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; *zoom: 1; }
 .header:after { content: " "; display: table; clear: both; }
 .header .header__logo { color: white; text-transform: uppercase; line-height: 1; font-size: 30px; font-size: 3rem; }
 .header .header__logo p { padding-left: 106px; text-transform: none; font-size: 11px; font-size: 1.1rem; font-family: "Neuropol-Medium", Arial, sans-serif; }
@@ -78,15 +78,19 @@ p { font-size: 15px; font-size: 1.5rem; font-family: "Helvetica-CE-Regular", Ari
 .main .nav .nav__ul li:before { position: absolute; content: ""; display: block; width: 43%; height: 1px; right: 60%; top: 63px; border-bottom: 1px dashed #d7d7d7; }
 .main .nav .nav__ul li:after { position: absolute; content: ""; display: block; width: 43%; height: 1px; left: 60%; top: 63px; border-bottom: 1px dashed #d7d7d7; }
 .main .nav .nav__ul a { position: relative; display: block; text-transform: uppercase; text-decoration: none; color: white; font-size: 20px; font-size: 2rem; font-family: "HelveticaNeue-Light", Arial, sans-serif; font-weight: normal; }
-.main .nav .nav__ul a i { display: block; width: 26px; height: 26px; border-radius: 50%; margin: 20px auto 0; background: url('../img/icons-sdee0c2a698.png') 0 -38px no-repeat; width: 28px; height: 28px; }
-.main .nav .nav__ul a:hover i { background: url('../img/icons-sdee0c2a698.png') 0 0 no-repeat; width: 28px; height: 28px; }
+.main .nav .nav__ul a i { display: block; width: 26px; height: 26px; border-radius: 50%; margin: 20px auto 0; background: url('../img/icons-s0b873e82f0.png') 0 -38px no-repeat; width: 28px; height: 28px; }
+.main .nav .nav__ul a .onhover { visibility: hidden; width: 261px; height: 263px; position: absolute; z-index: 100; top: -53px; left: -45px; background: url(../img/base.png) no-repeat; opacity: 0; -webkit-transition: opacity 0.2s, -webkit-transform 0.2s; -moz-transition: opacity 0.2s, -moz-transform 0.2s; -o-transition: opacity 0.2s, -o-transform 0.2s; transition: opacity 0.2s, transform 0.2s; -ms-transform: scale(0.5); -webkit-transform: scale(0.5); transform: scale(0.5); }
+.main .nav .nav__ul a .onhover:after { content: ""; position: absolute; display: block; top: 20px; left: 22px; width: 215px; height: 215px; background: url(../img/filter.png) no-repeat; }
+.main .nav .nav__ul a .onhover img { margin-top: 20px; }
+.main .nav .nav__ul a:hover .onhover { visibility: visible; opacity: 1; -ms-transform: scale(1); -webkit-transform: scale(1); transform: scale(1); }
+.main .nav .nav__ul a.is-active i { background: url('../img/icons-s0b873e82f0.png') 0 0 no-repeat; width: 28px; height: 28px; }
 .main .main__in { padding-top: 81px; }
 .main .content__wrap { position: relative; padding-bottom: 45px; height: 100%; background: url(../img/main_bg.png) repeat; }
 .main .content__wrap:before { content: ""; position: absolute; display: block; top: 0; left: -100%; width: 100%; height: 100%; background: url(../img/main_bg.png) repeat; }
 .main .content__wrap:after { content: ""; position: absolute; display: block; top: 0; right: -100%; width: 100%; height: 100%; background: url(../img/main_bg.png) repeat; }
 .main .content { width: 855px; padding-left: 230px; height: 635px; overflow: hidden; }
 .main .content__in { width: 804px; color: white; }
-.main .content__in h2 { margin-top: 40px; padding-top: 50px; border-top: 1px dashed #aaa7a4; }
+.main .content__in h2 { margin-top: 30px; padding-top: 50px; border-top: 1px dashed #aaa7a4; }
 .main .content__in section { *zoom: 1; }
 .main .content__in section:after { content: " "; display: table; clear: both; }
 .main .content__in section div { width: 45%; float: right; }

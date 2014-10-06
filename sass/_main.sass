@@ -4,7 +4,7 @@
 	position: relative
 	height: 80px
 	padding-top: 40px
-	margin-bottom: 120px
+	margin-bottom: 180px
 	z-index: 2
 	+nm
 	+box
@@ -113,9 +113,37 @@
 					border-radius: 50%
 					margin: 20px auto 0
 					+s(menu_i)
+				.onhover
+					visibility: hidden
+					width: 261px
+					height: 263px
+					position: absolute
+					z-index: 100
+					top: -53px
+					left: -45px
+					background: url(../img/base.png) no-repeat
+					opacity: 0
+					+transition(opacity 0.2s, transform 0.2s)
+					+scale(0.5)
+					&:after
+						content: ""
+						position: absolute
+						display: block
+						top: 20px
+						left: 22px
+						width: 215px
+						height: 215px
+						background: url(../img/filter.png) no-repeat
+					img
+						margin-top: 20px
 				&:hover
+					.onhover
+						visibility: visible
+						opacity: 1
+						+scale(1)
+				&.is-active
 					i
-						+s(menu_i-hover)
+						+s(menu_i-active)
 	.main__in
 		@extend %in
 		padding-top: 81px
@@ -151,7 +179,7 @@
 		width: 804px
 		color: #fff
 		h2
-			margin-top: 40px
+			margin-top: 30px
 			padding-top: 50px
 			border-top: 1px dashed #aaa7a4
 		section
