@@ -1,0 +1,31 @@
+//mode
+.content
+	.jspDrag
+		width: 7px
+		height: 173px !important
+		left: 50%
+		margin-left: -4.5px
+		border: 1px solid #d8dadc
+		background: url(../img/scroll_bg.png) repeat-y
+		z-index: 10
+		+border-radius(5px)
+		&:before
+			content: ""
+			display: block
+			position: absolute
+			width: 1px
+			left: 3px
+			height: 1000px
+			top: -1000px
+			background: #d8dadc
+		&:after
+			content: ""
+			display: block
+			position: absolute
+			width: 1px
+			height: 1000px
+			left: 3px
+			bottom: -1000px
+			background: #d8dadc
+	.jspTrack, .jspVerticalBar
+		background: none

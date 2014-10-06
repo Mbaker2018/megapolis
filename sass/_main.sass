@@ -1,216 +1,199 @@
-// Normally mainpage styles
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//main page
+.header
+	@extend %in
+	position: relative
+	height: 80px
+	padding-top: 40px
+	margin-bottom: 120px
+	z-index: 2
+	+nm
+	+box
+	+clr
+	.header__logo
+		color: #fff
+		text-transform: uppercase
+		line-height: 1
+		+fs(30)
+		p
+			padding-left: 106px
+			text-transform: none
+			+fs(11)
+			+nm
+	.header__call
+		color: #fff
+		+fs(24)
+
+.main
+	border-bottom: 1px dashed #d7d7d7
+	.nav__wrap
+		width: 890px
+		margin: 0 auto
+		position: relative
+		&:before
+			content: ""
+			position: absolute
+			width: 100%
+			height: 81px
+			left: -100%
+			background: #000
+			filter: alpha(opacity=50)
+			+opacity(.5)
+		&:after
+			content: ""
+			position: absolute
+			width: 100%
+			height: 81px
+			right: -100%
+			background: #000
+			filter: alpha(opacity=50)
+			+opacity(.5)
+	.nav
+		position: absolute
+		width: 890px
+		top: -64px
+		left: 50%
+		margin-left: -445px
+		&:before
+			content: ""
+			position: absolute
+			display: block
+			top: 64px
+			left: -100%
+			width: 100%
+			border-top: 1px dashed #d7d7d7
+		&:after
+			content: ""
+			position: absolute
+			display: block
+			top: 64px
+			right: -100%
+			width: 100%
+			border-top: 1px dashed #d7d7d7
+			z-index: 1
+		.nav__ul
+			text-align: justify
+			font-size: 0
+			&:after
+				display: inline-block
+				content: ""
+				width: 100%
+			li
+				position: relative
+				display: inline-block
+				width: 178px
+				height: 145px
+				text-align: center
+				background: url(../img/main_top.png) bottom center no-repeat
+				&:before
+					position: absolute
+					content: ""
+					display: block
+					width: 43%
+					height: 1px
+					right: 60%
+					top: 63px
+					border-bottom: 1px dashed #d7d7d7
+				&:after
+					position: absolute
+					content: ""
+					display: block
+					width: 43%
+					height: 1px
+					left: 60%
+					top: 63px
+					border-bottom: 1px dashed #d7d7d7
+			a
+				position: relative
+				display: block
+				text-transform: uppercase
+				text-decoration: none
+				color: #FFF
+				+fs(20)
+				+hl
+				i
+					display: block
+					width: 26px
+					height: 26px
+					border: 1px solid #fff
+					border-radius: 50%
+					margin: 20px auto 0
+				&:hover
+					i
+						background: #99aabc
+	.main__in
+		@extend %in
+		padding-top: 81px
+	.content__wrap
+		position: relative
+		padding-bottom: 45px
+		height: 100%
+		background: url(../img/main_bg.png) repeat
+		&:before
+			content: ""
+			position: absolute
+			display: block
+			top: 0
+			left: -100%
+			width: 100%
+			height: 100%
+			background: url(../img/main_bg.png) repeat
+		&:after
+			content: ""
+			position: absolute
+			display: block
+			top: 0
+			right: -100%
+			width: 100%
+			height: 100%
+			background: url(../img/main_bg.png) repeat
+	.content
+		width: 855px
+		padding-left: 230px
+		height: 635px
+		overflow: hidden
+	.content__in
+		width: 804px
+		color: #fff
+		h2
+			margin-top: 40px
+			padding-top: 50px
+			border-top: 1px dashed #aaa7a4
+		section
+			+clr
+			div
+				width: 45%
+				float: right
+				&:first-child
+					float: left
+			img
+				display: inline-block
+				margin: 0 15px 20px 0
+			span
+				display: inline-block
+				width: 70%
+				text-transform: uppercase
+				vertical-align: top
+				+fs(17)
+				+hb
+				+clr
+
+
+
+
+
+.footer
+	@extend %in
+	position: relative
+	height: 50px
+	margin-top: 70px
+	z-index: 2
+	+clr
+	p, a
+		color: #FFF
+		line-height: 1.5
+		+fs(12)
+		+rr
+	a
+		text-decoration: none
+		&:hover
+			text-decoration: underline
