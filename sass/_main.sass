@@ -33,14 +33,14 @@
 			content: ""
 			position: absolute
 			width: 100%
-			height: 81px
+			height: 14px
 			left: -100%
 			background: url(../img/main_bg.png) repeat
 		&:after
 			content: ""
 			position: absolute
 			width: 100%
-			height: 81px
+			height: 14px
 			right: -100%
 			background: url(../img/main_bg.png) repeat
 	.nav
@@ -77,9 +77,9 @@
 				position: relative
 				display: inline-block
 				width: 178px
-				height: 145px
+				height: 78px
 				text-align: center
-				background: url(../img/main_top.png) bottom center no-repeat
+				background: url(../img/main_top1.png) bottom center no-repeat
 				&:before
 					position: absolute
 					content: ""
@@ -118,7 +118,7 @@
 					width: 261px
 					height: 263px
 					position: absolute
-					z-index: 100
+					z-index: 110
 					top: -53px
 					left: -45px
 					background: url(../img/base.png) no-repeat
@@ -146,12 +146,24 @@
 						+s(menu_i-active)
 	.main__in
 		@extend %in
-		padding-top: 81px
-	.content__wrap
+		padding-top: 14px
+	.content
+		width: 809px
+		padding-left: 230px
+		padding-bottom: 50px
+		padding-top: 46px
+		color: #fff
 		position: relative
-		padding-bottom: 45px
-		height: 100%
 		background: url(../img/main_bg.png) repeat
+		&.content-withpad
+			padding-top: 94px
+			padding-bottom: 165px
+		&.content-withpad-another
+			padding-top: 69px
+		&.content__fullwidth
+			width: 1200px
+			padding-left: 0
+			padding-bottom: 187px
 		&:before
 			content: ""
 			position: absolute
@@ -170,14 +182,29 @@
 			width: 100%
 			height: 100%
 			background: url(../img/main_bg.png) repeat
-	.content
-		width: 855px
-		padding-left: 230px
-		height: 635px
-		overflow: hidden
-	.content__in
-		width: 804px
-		color: #fff
+		&.content__wrap-withpad
+			padding-top: 30px
+			padding-bottom: 157px
+		.content__in
+			+clr
+		.info
+			width: 28%
+			h2
+				margin-top: 35px
+				margin-bottom: 35px
+				padding-top: 0
+				text-align: left
+				text-transform: uppercase
+				border-top: 0
+				+fs(22)
+			h3
+				margin-bottom: 10px
+				text-transform: uppercase
+				+fs(15)
+			p
+				line-height: 1.2
+				margin-bottom: 15px
+				+fs(13)
 		h2
 			margin-top: 30px
 			padding-top: 50px
@@ -200,6 +227,10 @@
 				+fs(17)
 				+hb
 				+clr
+		p
+			+fs(15)
+			+hcr
+
 
 
 

@@ -1,31 +1,52 @@
 //mode
-.content
-	.jspDrag
-		width: 7px
-		height: 173px !important
-		left: 50%
-		margin-left: -4.5px
-		border: 1px solid #d8dadc
-		background: url(../img/scroll_bg.png) repeat-y
-		z-index: 10
-		+border-radius(5px)
+.slider
+	position: relative
+	width: 820px
+	height: 504px
+	&:first-child
+		display: block
+	img
+		display: none
+		width: 100%
+	.prev
+		position: absolute
+		display: block
+		width: 50px
+		height: 98px
+		top: 50%
+		margin-top: -49px
+		z-index: 110
+		background-color: #000
+		background-color: rgba(0,0,0,.8)
 		&:before
 			content: ""
 			display: block
-			position: absolute
-			width: 1px
-			left: 3px
-			height: 1000px
-			top: -1000px
-			background: #d8dadc
-		&:after
+			margin: 23px auto 0
+			+s(prev)
+	.next
+		position: absolute
+		display: block
+		width: 50px
+		height: 98px
+		top: 50%
+		right: 0
+		margin-top: -49px
+		z-index: 110
+		background-color: #000
+		background-color: rgba(0,0,0,.8)
+		&:before
 			content: ""
 			display: block
-			position: absolute
-			width: 1px
-			height: 1000px
-			left: 3px
-			bottom: -1000px
-			background: #d8dadc
-	.jspTrack, .jspVerticalBar
-		background: none
+			margin: 23px auto 0
+			+s(next)
+
+.close
+	width: 50px
+	height: 50px
+	background-color: #000
+	background-color: rgba(0,0,0,.5)
+	&:before
+		content: ""
+		display: block
+		margin: 10px auto 0
+		+s(close)
