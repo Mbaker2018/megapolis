@@ -50,3 +50,38 @@
 		display: block
 		margin: 10px auto 0
 		+s(close)
+
+.input
+	width: 100%
+	margin-bottom: 10px
+	padding: 11px 25px 15px 25px
+	border: 1px solid #EEEEED
+	background: url(../img/input_bg.png) repeat
+	color: #fff
+	font-family: "Helvetica", sans-serif
+	font-size: 15px
+	+border-radius(5px)
+	+box
+
+.textarea
+	@extend .input
+	height: 105px
+	resize: none
+
+.submit
+	width: 124px
+	height: 45px
+	background: #EEE
+	color: #2e2e2e
+	font-family: "Helvetica", sans-serif
+	font-size: 15px
+	+border-radius(5px)
+
+//map
+.map
+	width: 393px
+	height: 517px
+	overflow: hidden
+	border: 8px solid #000
+	border-bottom: 13px solid #000
+	+box

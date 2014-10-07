@@ -1,0 +1,64 @@
+//inner pages
+//work
+.content
+	.info
+		width: 28%
+		h2
+			margin-top: 35px
+			margin-bottom: 35px
+			padding-top: 0
+			text-align: left
+			text-transform: uppercase
+			border-top: 0
+			+fs(22)
+		h3
+			margin-bottom: 10px
+			text-transform: uppercase
+			+fs(15)
+		p
+			line-height: 1.2
+			margin-bottom: 15px
+			+fs(13)
+
+//contacts
+.content
+	.contacts
+		position: relative
+		width: 348px
+		margin-right: 24px
+		+box
+		&:first-child
+			padding-top: 30px
+		h3, a
+			position: relative
+			padding-left: 35px
+		h3
+			&.last
+				line-height: 1.3
+				margin-bottom: 0
+		a
+			display: block
+			margin-bottom: 24px
+			text-decoration: none
+			color: #FFF
+			+fs(17)
+			+hb
+			&:hover
+				text-decoration: underline
+		.fa
+			position: absolute
+			top: 2px
+			left: 0
+			+fs(19)
+		.line
+			position: absolute
+			top: 112px
+			right: -223px
+			z-index: 1
+			+s(line)
+	.contacts__form
+		h2
+			padding-top: 20px
+			margin-bottom: 19px
+			text-align: left
+

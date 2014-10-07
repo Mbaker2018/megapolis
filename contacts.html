@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Contacts</title>
+	<meta name="viewport" content="initial-scale=1"/>
+	<!-- <meta name="viewport" content="width=1200"> -->
+	<link rel="stylesheet" media="all" href="css/screen.css" >
+	<link rel="stylesheet" media="all" href="css/font-awesome.css" >
+	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+<!-- BEGIN  out-->
+<div class="out">
+	<header class="header">
+		<div class="header__logo onleft">
+			Megapolis-A <p>the renovation is easy</p>
+		</div>
+		<div class="header__call onright">
+			+7 495 456 45 938
+		</div>
+	</header>
+	<div class="main">
+		<!-- begin nav  -->
+		<div class="nav__wrap">
+			<div class="nav">
+				<ul class="nav__ul">
+					<li>
+						<a href="main.html">О компании<i></i>
+							<div class="onhover">
+								<img src="img/company.png" alt="О компании">
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">Услуги<i></i>
+						<div class="onhover">
+							<img src="img/company.png" alt="Услуги">
+						</div>
+						</a>
+					</li>
+					<li>
+						<a class="is-active" href="#">Работы<i></i>
+						<div class="onhover">
+							<img src="img/works.png" alt="Работы">
+						</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">Вакансии<i></i>
+						<div class="onhover">
+							<img src="img/works.png" alt="Вакансии">
+						</div>
+						</a>
+				</li>
+					<li>
+						<a href="#">Контакты<i></i>
+						<div class="onhover">
+							<img src="img/works.png" alt="Контакты">
+						</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- end nav -->
+		<!-- begin content  -->
+		<div class="main__in">
+			<div class="content content-withpad-another">
+				<h1>Контакты</h1>
+				<div class="content__in">
+					<div class="contacts onleft">
+						<h3><i class="fa fa-phone"></i>+7 (495) 783-60-24</h3>
+						<a href="mailto: info@alpaco.ru"><i class="fa fa-envelope"></i>info@alpaco.ru</a>
+						<h3 class="last"><i class="fa fa-location-arrow"></i>ул. Иванова - Петрова 236 / 2 <br> Москва, 120938</h3>
+						<div class="contacts__form">
+							<h2>Напишите нам</h2>
+							<form>
+								<input class="input" type="text" value="Ваше имя" onfocus="if (this.value=='Ваше имя') this.value='';"
+								onblur="if (this.value==''){this.value='Ваше имя'}" >
+								<input class="input" type="text" value="Ваш телефон или e-mail" onfocus="if (this.value=='Ваш телефон или e-mail') this.value='';"
+								onblur="if (this.value==''){this.value='Ваш телефон или e-mail'}" >
+								<textarea class="textarea">Ваше сообщение</textarea>
+								<button class="submit" type="submit">Отправить</button>
+							</form>
+						</div>
+						<div class="line"></div>
+					</div>
+					<div style="width: 393px; height: 517px" id="map" class="map onleft"></div>
+					<script>
+						var myMap;
+						ymaps.ready(init);
+
+						function init () {
+						    myMap = new ymaps.Map('map', {
+						        center: [55.722474, 37.401142],
+						        zoom: 10,
+						        controls: []
+						    });
+
+						    myMap.behaviors.disable(['drag', 'dblClickZoom', 'scrollZoom']);
+						    myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+						              hintContent: ''
+						          }, {
+						              // Опции.
+						              // Необходимо указать данный тип макета.
+						              iconLayout: 'default#image',
+						              // Своё изображение иконки метки.
+						              iconImageHref: 'img/pinmap.png',
+						              // Размеры метки.
+						              iconImageSize: [51, 68],
+						              // Смещение левого верхнего угла иконки относительно
+						              // её "ножки" (точки привязки).
+						              iconImageOffset: [-25, -116]
+						          });
+
+						      myMap.geoObjects.add(myPlacemark);
+						}
+					</script>
+				</div>
+			</div>
+		<!-- end content -->
+		</div>
+	</div>
+</div>
+<!-- END out-->
+<!-- begin footer  -->
+<footer class="footer">
+	<div class="footer__copyright onleft">
+		<p>©  Megapolis-A 2014</p>
+		<p>Разработка и продвижение сайта: ADV Creative</p>
+	</div>
+	<a href="mailto: info@megapolis-a.ru" class="footer__mail onright">info@megapolis-a.ru</a>
+</footer>
+<!-- end footer -->
+<!-- load scripts -->
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+</body>
+</html>
