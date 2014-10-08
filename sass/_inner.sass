@@ -52,13 +52,134 @@
 			+fs(19)
 		.line
 			position: absolute
+			width: 267px
+			height: 95px
 			top: 112px
 			right: -223px
 			z-index: 1
-			+s(line)
+			background: url(../img/line.png) no-repeat
 	.contacts__form
 		h2
 			padding-top: 20px
 			margin-bottom: 19px
 			text-align: left
 
+//works
+.content__in
+	.moscow
+		position: relative
+		overflow: hidden
+		.mark
+			position: absolute
+			width: 51px
+			height: 68px
+			background: url(../img/pinmap.png) no-repeat
+			cursor: pointer
+			z-index: 2
+			&.is-active
+				background: url(../img/pinmap-hover.png) no-repeat
+				z-index: 3
+			&.pin1
+				top: 87px
+				left: 115px
+			&.pin2
+				top: 167px
+				left: 59px
+				z-index: 5
+			&.pin3
+				top: 153px
+				left: 234px
+			&.pin4
+				top: 163px
+				left: 214px
+			&.pin5
+				left: 262px
+				bottom: 222px
+			&.pin6
+				top: 186px
+				right: 203px
+			&.pin7
+				top: 230px
+				right: 275px
+			&.pin8
+				top: 228px
+				right: 252px
+		.line
+			display: none
+			position: absolute
+			width: 368px
+			height: 105px
+			background: url(../img/line2.png) no-repeat
+			z-index: 2
+			&.pin1
+				width: 550px
+				top: 85px
+				left: 141px
+				background: url(../img/line3.png) no-repeat
+			&.pin2
+				top: 165px
+				left: 85px
+				width: 550px
+				background: url(../img/line3.png) no-repeat
+				z-index: 4
+			&.pin3
+				top: 128px
+				left: 257px
+			&.pin4
+				top: 138px
+				left: 238px
+			&.pin5
+				bottom: 210px
+				left: 285px
+			&.pin6
+				top: 160px
+				right: -137px
+			&.pin7
+				top: 205px
+				right: -66px
+				z-index: 3
+			&.pin8
+				top: 202px
+				right: -88px
+
+	.description
+		position: relative
+		width: 295px
+		margin-top: 100px
+		padding: 8px
+		background-color: #000
+		background-color: rgba(0,0,0,.5)
+		+box
+		.close
+			position: absolute
+			top: 0
+			right: -50px
+			cursor: pointer
+		img
+			max-width: 280px
+		.description__in
+			display: none
+			&:first-child
+				display: block
+		.description__txt
+			padding-left: 10px
+			+box
+			h2
+				margin-top: 20px
+				margin-bottom: 17px
+				padding-top: 0
+				border-top: 0
+				text-transform: uppercase
+				text-align: left
+				+fs(22)
+			p
+				margin-bottom: 15px
+				+fs(13)
+			a
+				display: block
+				margin-bottom: 10px
+				text-decoration: none
+				color: #51a0f9
+				+fs(15)
+				&:hover
+					text-decoration: underline
