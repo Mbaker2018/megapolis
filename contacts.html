@@ -85,7 +85,6 @@
 								<button class="submit" type="submit">Отправить</button>
 							</form>
 						</div>
-						<div class="line"></div>
 					</div>
 					<div style="width: 393px; height: 517px" id="map" class="map onleft"></div>
 					<script>
@@ -96,10 +95,9 @@
 						    myMap = new ymaps.Map('map', {
 						        center: [55.722474, 37.401142],
 						        zoom: 10,
-						        controls: []
+						        controls: ['zoomControl', 'typeSelector',  'fullscreenControl']
 						    });
-
-						    myMap.behaviors.disable(['drag', 'dblClickZoom', 'scrollZoom']);
+						    myMap.behaviors.disable(['scrollZoom'])
 						    myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
 						              hintContent: ''
 						          }, {

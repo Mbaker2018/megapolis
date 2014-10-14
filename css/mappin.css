@@ -1,0 +1,65 @@
+.mark {
+	position: absolute;
+	width: 51px;
+	height: 68px;
+	background: url(../img/pinmap.png) no-repeat;
+	cursor: pointer;
+	z-index: 3;
+}
+
+.mark.is-active {
+	background: url(../img/pinmap-hover.png) no-repeat;
+	z-index: 2;
+}
+
+.mark.is-active:before {
+	display: block;
+}
+
+.mark:before {
+	content: "";
+	display: none;
+	position: absolute;
+	width: 550px;
+	height: 95px;
+	top: 0px;
+	left: 25px;
+	background: url(../img/line.png) no-repeat;
+}
+
+.mark.pin1 {
+	top: 87px;
+	left: 115px;
+}
+.mark.pin2 {
+	top: 167px;
+	left: 59px;
+}
+.mark.pin3 {
+	top: 153px;
+	left: 234px;
+}
+.mark.pin4 {
+	top: 163px;
+	left: 214px;
+}
+.mark.pin5 {
+	left: 262px;
+	bottom: 222px;
+}
+.mark.pin6 {
+	top: 186px;
+	right: 203px;
+}
+.mark.pin7 {
+	top: 230px;
+	right: 275px;
+}
+.mark.pin8 {
+	top: 228px;
+	right: 252px;
+}
+.mark.pin9 {
+	top: 0;
+	right: 0;
+}

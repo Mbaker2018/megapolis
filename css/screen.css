@@ -50,9 +50,8 @@ h2 { margin-bottom: 45px; text-align: center; line-height: 1; font-size: 32px; f
 
 h3 { margin-bottom: 15px; line-height: 1; font-size: 17px; font-size: 1.7rem; font-family: "Helvetica-Bold", Arial, sans-serif; }
 
-ul li { font-family: Helvetica, Arial, sans-serif; font-size: 15px; font-size: 1.5rem; }
-ul li span { position: relative; display: block; padding: 0 0 15px 20px; }
-ul li span:before { content: ""; position: absolute; display: block; width: 10px; height: 10px; border: 1px solid white; top: 5px; left: 0; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; }
+.content ul li { position: relative; padding: 0 0 15px 20px; font-family: Helvetica, Arial, sans-serif; font-size: 15px; font-size: 1.5rem; }
+.content ul li:before { content: ""; position: absolute; display: block; width: 10px; height: 10px; border: 1px solid white; top: 6px; left: 0; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; }
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
@@ -126,25 +125,6 @@ ul li span:before { content: ""; position: absolute; display: block; width: 10px
 .content .contacts__form h2 { padding-top: 20px; margin-bottom: 19px; text-align: left; }
 
 .content__in .moscow { position: relative; overflow: hidden; }
-.content__in .moscow .mark { position: absolute; width: 51px; height: 68px; background: url(../img/pinmap.png) no-repeat; cursor: pointer; z-index: 2; }
-.content__in .moscow .mark.is-active { background: url(../img/pinmap-hover.png) no-repeat; z-index: 3; }
-.content__in .moscow .mark.pin1 { top: 87px; left: 115px; }
-.content__in .moscow .mark.pin2 { top: 167px; left: 59px; z-index: 5; }
-.content__in .moscow .mark.pin3 { top: 153px; left: 234px; }
-.content__in .moscow .mark.pin4 { top: 163px; left: 214px; }
-.content__in .moscow .mark.pin5 { left: 262px; bottom: 222px; }
-.content__in .moscow .mark.pin6 { top: 186px; right: 203px; }
-.content__in .moscow .mark.pin7 { top: 230px; right: 275px; }
-.content__in .moscow .mark.pin8 { top: 228px; right: 252px; }
-.content__in .moscow .line { display: none; position: absolute; width: 368px; height: 105px; background: url(../img/line2.png) no-repeat; z-index: 2; }
-.content__in .moscow .line.pin1 { width: 550px; top: 85px; left: 141px; background: url(../img/line3.png) no-repeat; }
-.content__in .moscow .line.pin2 { top: 165px; left: 85px; width: 550px; background: url(../img/line3.png) no-repeat; z-index: 4; }
-.content__in .moscow .line.pin3 { top: 128px; left: 257px; }
-.content__in .moscow .line.pin4 { top: 138px; left: 238px; }
-.content__in .moscow .line.pin5 { bottom: 210px; left: 285px; }
-.content__in .moscow .line.pin6 { top: 160px; right: -137px; }
-.content__in .moscow .line.pin7 { top: 205px; right: -66px; z-index: 3; }
-.content__in .moscow .line.pin8 { top: 202px; right: -88px; }
 .content__in .description { position: relative; width: 295px; margin-top: 100px; padding: 8px; background-color: black; background-color: rgba(0, 0, 0, 0.5); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .content__in .description .close { position: absolute; top: 0; right: -50px; cursor: pointer; }
 .content__in .description img { max-width: 280px; }

@@ -16,14 +16,11 @@ head.ready(function() {
 	});
 
 	//lines and description
-		$('.mark').mouseenter(function(event) {
-			$(this).addClass('is-active').next().show();
+		$('.mark').click(function(event) {
+			$('.mark').removeClass('is-active');
+			$(this).addClass('is-active');
 			$(this).parent().next().children('.description__in').hide();
 			$(this).parent().next().children().filter('[data-name=' + $(this).data('name') + ']').show();
-		});
-
-		$('.mark').mouseleave(function(event) {
-			$(this).removeClass('is-active').next().hide();
 		});
 
 });
